@@ -1,0 +1,34 @@
+<%- include('partials/header.ejs');%>
+
+<body>
+
+    
+    <%- include('partials/navbar.ejs');%>
+   
+<div class="container">
+<h3>Respostas Detalhada</h3>
+<hr>
+<% respostas.forEach(respostas=>{%>
+    <p><%= pergunta.descricao %></p>
+    <div class="card">
+       
+        <div class="card-body">
+          
+          <p><%= respostas.corpo %></p>  
+        </div>
+    </div>
+
+
+<%})%>
+
+
+
+</div>
+        
+
+    
+    </div>
+
+
+
+<%- include('partials/footer.ejs');%>
